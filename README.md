@@ -1,0 +1,2 @@
+# jahiaProductGuidelines
+Jahia Product Guidelines
