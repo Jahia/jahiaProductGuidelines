@@ -12,7 +12,28 @@ html, body {
 }
 
 
-/* Custom scrollbar styles */
+/* Custom scrollbar for the left container (Dark Style) */
+
+section.leftContainerSection nav::-webkit-scrollbar {
+	width: 14px;
+}
+ 
+section.leftContainerSection nav::-webkit-scrollbar-track {
+	background: none;
+}
+ 
+section.leftContainerSection nav::-webkit-scrollbar-thumb {
+	background: #828282;
+	border-radius: 8px;
+	border: 4px solid #5e5e5e;
+}
+
+section.leftContainerSection nav::-webkit-scrollbar-thumb:hover {
+	background: #a7a7a7;
+}
+
+
+/* Custom scrollbar for the right container (Light Style) */
 
 ::-webkit-scrollbar {
 	width: 14px;
@@ -23,9 +44,13 @@ html, body {
 }
  
 ::-webkit-scrollbar-thumb {
-	background: #828282;
+	background: #e8e8e8;
 	border-radius: 8px;
-	border: 4px solid #5e5e5e;
+	border: 4px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a7a7a7;
 }
 
 
@@ -121,6 +146,7 @@ section.rightMainContainer {
 	max-width: 1160px;
 	margin: 0 auto;
 	position: relative;
+	padding-bottom: 50px;
 }
 
 .rightMainContainer .sectionContent h2 {
@@ -153,6 +179,7 @@ section.rightMainContainer {
 .rightMainContainer .sectionContent .colorCardContainer {
 	width: 100%;
 	min-height: 100px;
+	margin-bottom: 50px;
 }
 
 .rightMainContainer .sectionContent .colorCardContainer .colorCard {
@@ -166,6 +193,13 @@ section.rightMainContainer {
 .rightMainContainer .sectionContent .colorCardContainer .colorCard .colorCircle {
 	height: 64px;
 	width: 64px;
+	border-radius: 50%;
+	margin: 15px auto;
+}
+
+.rightMainContainer .sectionContent .colorCardContainer .colorCard .secondaryColorCircle {
+	height: 52px;
+	width: 52px;
 	border-radius: 50%;
 	margin: 15px auto;
 }
@@ -187,7 +221,7 @@ section.rightMainContainer {
 }
 
 .orangeMedium {
-	background: #f16c4e;
+	background: #ff7200;
 }
 
 .green {
@@ -202,6 +236,22 @@ section.rightMainContainer {
 	background: #1be3e3;
 }
 
+.secondaryGreen {
+	background: #5ad500;
+}
+
+.darkOrange {
+	background: #f16c4e;
+}
+
+.secondaryOrange {
+	background: #ff8d00;
+}
+
+.lightRed {
+	background: #ff5e5e;
+}
+
 .rightMainContainer .sectionContent .colorCardContainer .colorCard .colorName {
 	text-transform: uppercase;
 	font-size: 12px;
@@ -214,4 +264,70 @@ section.rightMainContainer {
 	font-weight: 500;
 	padding: 2px 0;
 	color: #a7a7a7;
+}
+
+
+
+/*======= Right section - TYPOGRAPHY =======*/
+
+
+.sectionContent .fontNameTitle {
+	border-bottom: 1px dashed #e8e8e8;
+	padding: 15px 0;
+
+}
+
+.sectionContent .fontElementTitle {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #a7a7a7;
+	padding: 20px 0;
+}
+
+.sectionContent .charactersContainer {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    unicode-bidi: bidi-override;
+    word-break: break-all;
+    word-wrap: break-word;
+	margin-bottom: 30px;
+}
+
+.ralewayFont {
+	font-family: 'Raleway', sans-serif;
+}
+
+.robotoFont {
+	font-family: 'Roboto', sans-serif;
+}
+
+.sectionContent .fontVariantsPreviewContainer {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.extraLightFont {
+	font-weight: 200;
+}
+
+.lightFont {
+	font-weight: 300;
+}
+
+.regularFont {
+	font-weight: 400;
+}
+
+.mediumFont {
+	font-weight: 500;
+}
+
+.boldFont {
+	font-weight: 700;
+}
+
+.blackFont {
+	font-weight: 900;
 }
