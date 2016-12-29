@@ -176,7 +176,8 @@ section.rightMainContainer {
 /*======= Right section - COLOR =======*/
 
 
-.rightMainContainer .sectionContent .colorCardContainer {
+.rightMainContainer .sectionContent .colorCardContainer,
+.rightMainContainer .sectionContent .subCardContainer {
 	width: 100%;
 	min-height: 100px;
 	margin-bottom: 50px;
@@ -330,4 +331,82 @@ section.rightMainContainer {
 
 .blackFont {
 	font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pre .line-number {
+	padding: 1em;
+	background: #6e6e6e;
+	padding-left: 0.5em;
+	color: #565656;
+	font-weight: 700;
+	text-align: right;
+	float: left;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+pre .line-number span {
+	display:block;
+	padding:0 .5em 0 1em;
+}
+
+.elementSnippetContainer .hljs {
+    padding: 1em;
+	background: #6e6e6e;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.elementSnippetContainer .hljs-keyword,
+.elementSnippetContainer .hljs-selector-tag,
+.elementSnippetContainer .hljs-name,
+.elementSnippetContainer .hljs-attr {
+    color: #2be500;
+}
+
+.elementSnippetContainer .hljs-comment,
+.elementSnippetContainer .hljs-deletion,
+.elementSnippetContainer .hljs-meta {
+    color: #a7a7a7;
+}
+
+.elementSnippetContainer .hljs-string,
+.elementSnippetContainer .hljs-type,
+.elementSnippetContainer .hljs-built_in,
+.elementSnippetContainer .hljs-builtin-name,
+.elementSnippetContainer .hljs-selector-id,
+.elementSnippetContainer .hljs-selector-attr,
+.elementSnippetContainer .hljs-selector-pseudo,
+.elementSnippetContainer .hljs-addition,
+.elementSnippetContainer .hljs-variable,
+.elementSnippetContainer .hljs-template-variable,
+.elementSnippetContainer .hljs-symbol,
+.elementSnippetContainer .hljs-attribute {
+    color: #1be3e3;
+}
+
+.elementSnippetContainer .hljs-code,
+.elementSnippetContainer .hljs-title,
+.elementSnippetContainer .hljs-section,
+.elementSnippetContainer .hljs-selector-class {
+    color: #5ad500;
 }
