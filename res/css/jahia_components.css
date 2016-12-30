@@ -1,0 +1,14 @@
+.button_defaultButton {
+	background: rgb(200, 200, 200);
+	color: rgb(107,107,107);
+	border: none;
+	padding: 5px 10px;
+	font-size: 18px;
+	width: 150px;
+	outline: none;
+}
+
+.button_defaultButton:hover {
+	background: rgb(230, 230, 230);
+	cursor: pointer;
+}

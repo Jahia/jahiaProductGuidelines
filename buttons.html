@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
 		<link href="res/css/main.css" rel="stylesheet">
+		<link href="res/css/jahia_components.css" rel="stylesheet">
 		<title>Jahia Product Guidelines</title>
 		<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -13,8 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,700,900" rel="stylesheet">		
 		
 		<link rel="stylesheet" href="http://cdn.jsdelivr.net/highlight.js/9.9.0/styles/monokai-sublime.min.css">
-<script src="http://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="http://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
     </head>
 	<body>
 	
@@ -80,21 +80,68 @@
 					(quem locum breviter paulo ante perstrinxi) praesidii adiumentique.</p>
 					<section class="elementSnippetContainer">
 						<div></div>
-						<pre><code class="html">&lt;button type="button" class="DXSubmit componentEditor__createNewSubmit"&gt;Create&lt;/button&gt;</code></pre>
+						<div class="subSectionTitle">HTML</div>
+						<pre><span class="copyCodeSnippet">Copy</span><code class="html">&lt;button type="button" class="DXSubmit button_defaultButton"&gt;Create&lt;/button&gt;</code></pre>
+						<div class="subSectionTitle">CSS</div>
+						<pre><span class="copyCodeSnippet">Copy</span><code class="css">.button_defaultButton {
+	background: rgb(200, 200, 200);
+	color: rgb(107,107,107);
+	border: none;
+	padding: 5px 10px;
+	font-size: 18px;
+	width: 150px;
+	outline: none;
+}
+
+.button_defaultButton:hover {
+	background: rgb(230, 230, 230);
+	cursor: pointer;
+}</code></pre>
+					<div class="subSectionTitle">RESULT
+						<span class="rightAbsContainer">
+							<small>Dark theme</small>
+							<label class="switch">
+								<input type="checkbox" id="changeTheme_result">
+								<div class="slider round"></div>
+							</label>
+						<span>
+					</div>
+					<div class="resultItemPreview">
+						<button type="button" class="DXSubmit button_defaultButton">Create</button>
+					</div>
 					</section>
 				</div>
 				
 				<h3>Icon button</h3>
-				<div class="subCardContainer"></div>
+				<div class="subCardContainer">
+					<p>desc...</p>
+					<section class="elementSnippetContainer">
+						<div></div>
+						<pre><span class="copyCodeSnippet">Copy</span><code class="html">/* Icon is set on the css */
+&lt;button type="button" class="app-menu--button app-menu--button---images" data-action="openDragInsertImages"&gt;Images&lt;/button&gt;</code></pre>
+					</section>
+				</div>
 				
 				<h3>Special & custom buttons</h3>
-				<div class="subCardContainer"></div>
+				<div class="subCardContainer">
+					<p>Iam in altera philosophiae parte. quae est quaerendi ac disserendi, quae logikh dicitur, iste vester plane, ut mihi quidem
+					videtur, inermis ac nudus est. tollit definitiones, nihil de dividendo ac partiendo docet, non quo modo efficiatur concludaturque
+					ratio tradit, non qua via captiosa solvantur ambigua distinguantur ostendit; iudicia rerum in sensibus ponit, quibus si semel
+					aliquid falsi pro vero probatum sit, sublatum esse omne iudicium veri et falsi putat.</p>
+				</div>
 				
 			</div>
 		</section>
 
 		<!-- Main script import -->
 		<script src="res/js/main.js" type="text/javascript"></script>
+		
+		<script>
+			hljs.configure({
+				tabReplace: '    ' // 4 spaces
+			})
+			hljs.initHighlightingOnLoad();
+		</script>
 		
 	</body>
 </html>

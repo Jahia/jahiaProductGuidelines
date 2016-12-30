@@ -410,3 +410,119 @@ pre .line-number span {
 .elementSnippetContainer .hljs-selector-class {
     color: #5ad500;
 }
+
+.elementSnippetContainer .hljs-bullet,
+.elementSnippetContainer .hljs-quote,
+.elementSnippetContainer .hljs-number,
+.elementSnippetContainer .hljs-regexp,
+.elementSnippetContainer .hljs-literal,
+.elementSnippetContainer .hljs-link {
+    color: #c6a7ff;
+}
+
+
+
+
+
+
+
+
+
+.elementSnippetContainer .subSectionTitle {
+	margin-top: 30px;
+	font-size: 12px;
+	color: #b9b9b9;
+	border-bottom: 1px dashed #b9b9b9;
+	padding-bottom: 5px;
+}
+
+.elementSnippetContainer pre {
+	position: relative;
+}
+
+.elementSnippetContainer .resultItemPreview {
+	/*background: #6e6e6e;*/
+	padding: 1em;
+	border-radius: 4px;
+	margin: 13px 0;
+}
+
+.rightAbsContainer {
+	position: absolute;
+	right: 0;
+}
+
+.rightAbsContainer small {
+	padding-right: 8px;
+	text-transform: uppercase;
+	position: inherit;
+	left: -72px;
+}
+
+span.copyCodeSnippet {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	color: #a7a7a7;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+	background: #5e5e5e;
+	padding: 4px 8px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 19px;
+	height: 10px;
+	border-radius: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	display:none;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 5px;
+	background: #6e6e6e;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 8px;
+	width: 8px;
+	left: 1px;
+	bottom: 1px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+	background: #e8e8e8;
+}
+
+input:checked + .slider:before {
+	background-color: #2be500;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(9px);
+	-ms-transform: translateX(9px);
+	transform: translateX(9px);
+}

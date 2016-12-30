@@ -9,6 +9,7 @@ $(document).ready(function() {
 	
 	
 	
+	
 	(function() {
 	var pre = document.getElementsByTagName('pre'),
 		pl = pre.length;
@@ -21,5 +22,16 @@ $(document).ready(function() {
 		}
 	}
 	})();
+	
+	
+	
+	
+	$("#changeTheme_result").on( "click", function(){
+		if ( $(this).is(':checked') ){
+			$(".elementSnippetContainer .resultItemPreview").css("background", "#6e6e6e");
+		}else{
+			$(".elementSnippetContainer .resultItemPreview").css("background", "initial");
+		}
+	});
 
 });
