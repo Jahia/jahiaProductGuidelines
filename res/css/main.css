@@ -12,6 +12,7 @@ html, body {
 }
 
 
+
 /* Custom scrollbar for the left container (Dark Style) */
 
 section.leftContainerSection nav::-webkit-scrollbar {
@@ -335,21 +336,7 @@ section.rightMainContainer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*======= Right section - Code previews =======*/
 
 
 pre .line-number {
@@ -422,11 +409,26 @@ pre .line-number span {
 
 
 
+/*======= Right section - Buttons =======*/
 
 
+.previewSection .previewItemImgContainer {
+	display: inline-block;
+	width: 320px;
+	margin: 25px 40px 15px 0;
+}
 
+.previewSection .previewItemImgContainer img {
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	border-radius: 4px;
+}
 
-
+.previewSection .previewItemImgContainer div {
+	color: #616161;
+	font-size: 13px;
+	line-height: 24px;
+}
 
 .elementSnippetContainer .subSectionTitle {
 	margin-top: 30px;
@@ -441,7 +443,6 @@ pre .line-number span {
 }
 
 .elementSnippetContainer .resultItemPreview {
-	/*background: #6e6e6e;*/
 	padding: 1em;
 	border-radius: 4px;
 	margin: 13px 0;
@@ -450,6 +451,22 @@ pre .line-number span {
 .rightAbsContainer {
 	position: absolute;
 	right: 0;
+}
+
+.fixedInfoDialog {
+    background: #fff5d8;
+    border: 2px dotted #ffda69;
+    padding: 8px 12px;
+    padding-left: 44px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #d8a713;
+    line-height: 25px;
+}
+
+.fixedInfoDialog .material-icons {
+	position: absolute;
+	left: 12px;
 }
 
 .rightAbsContainer small {
@@ -467,14 +484,27 @@ span.copyCodeSnippet {
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 14px;
-	cursor: pointer;
 	background: #5e5e5e;
 	padding: 4px 8px;
 	border-top-right-radius: 4px;
 	border-bottom-left-radius: 4px;
+	-webkit-transition: background 150ms ease-in-out;
+	-moz-transition: background 150ms ease-in-out;
+	-ms-transition: background 150ms ease-in-out;
+	-o-transition: background 150ms ease-in-out;
+	transition: background 150ms ease-in-out;
 }
 
+span.copyCodeSnippet:hover {
+	background: #4b4b4b;
+	cursor: pointer;
+}
+
+
+/* Custom switches (checkbox) */
+
 /* The switch - the box around the slider */
+
 .switch {
 	position: relative;
 	display: inline-block;
@@ -483,12 +513,16 @@ span.copyCodeSnippet {
 	border-radius: 34px;
 }
 
+
 /* Hide default HTML checkbox */
+
 .switch input {
 	display:none;
 }
 
+
 /* The slider */
+
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -526,3 +560,5 @@ input:checked + .slider:before {
 	-ms-transform: translateX(9px);
 	transform: translateX(9px);
 }
+
+

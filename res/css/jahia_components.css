@@ -1,3 +1,9 @@
+
+
+
+/*======= Buttons =======*/
+
+
 .button_defaultButton {
 	background: rgb(200, 200, 200);
 	color: rgb(107,107,107);
@@ -11,4 +17,107 @@
 .button_defaultButton:hover {
 	background: rgb(230, 230, 230);
 	cursor: pointer;
+}
+
+.button_iconButton {
+	background: none;
+	border: none;
+	color: #b9b9b9;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 18px;
+	outline: none;
+	padding: 4px;
+	text-align: center;
+	width: 80px;
+}
+
+
+/**/
+
+.customButtonTestContainer {
+	background-color: #ff8d00;
+	border-radius: 100px;
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	font-size: 11px;
+	font-weight: 700;
+	font-family: "Raleway";
+	color: #fff;
+	text-align: left;
+	transition: width 0.2s ease 0s, background-color 1s ease 0s;
+}
+
+.customButtonTestContainer:hover {
+	width: 172px;
+}
+
+.customButtonTestContainer button {
+	border: none;
+	background: none;
+	outline: none;
+	color: #fff;
+	float: left;
+	height: 16px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.customButtonTestContainer button.customButton_sync {
+	height: 24px;
+	padding: 0;
+}
+
+.customButtonTestContainer button.customButton_sync i {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.customButtonTestContainer button.customButton_publish {
+    padding-right: 8px;
+	border-right: 2px solid #f1f1f1;
+	margin-top: 4px;
+	margin-left: 2px;
+}
+
+.customButtonTestContainer button.customButton_unpublish {
+    margin-left: 2px;
+    margin-top: 4px;
+}
+
+
+
+/*======= Button ripple effect =======*/
+
+
+button {
+	position: relative;
+	overflow: hidden;
+	user-select: none;
+}
+
+.ripple {
+	position: absolute;
+	background: rgba(0,0,0,.15);
+	border-radius: 100%;
+	transform: scale(0);
+	pointer-events: none;
+}
+
+.ripple.show {
+	animation: ripple .75s ease-out;
+}
+
+@keyframes ripple {
+	
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+	
 }
