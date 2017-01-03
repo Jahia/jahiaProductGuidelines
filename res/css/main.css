@@ -409,8 +409,19 @@ pre .line-number span {
 
 
 
-/*======= Right section - Buttons =======*/
+/*======= Right section - sectionContent (Buttons) =======*/
 
+
+.sectionContent p a {
+	border-bottom: 2px dotted #c8c8c8;
+	font-weight: 600;
+	opacity: .7;
+}
+
+.sectionContent p a:hover {
+	opacity: 1;
+	cursor: pointer;
+}
 
 .previewSection .previewItemImgContainer {
 	display: inline-block;

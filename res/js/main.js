@@ -51,7 +51,7 @@ $(document).ready(function() {
 	
 	var addRippleEffect = function (e) {
 		var target = e.target;
-		if (target.tagName.toLowerCase() !== 'button') return false;
+		if (target.getAttribute("ripple") !== 'true') return false;
 		var rect = target.getBoundingClientRect();
 		var ripple = target.querySelector('.ripple');
 		if (!ripple) {

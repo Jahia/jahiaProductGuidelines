@@ -72,8 +72,8 @@
 		<section class="rightMainContainer">
 			<div class="sectionContent">
 				<h2>Buttons</h2><span><a></a></span>
-				<p>There are three primary button types. All the css and javascript required are already included in the jahia_components.css and
-				jahia_components.js files. Just copy the html where you want the buttom on your page.</p>
+				<p>There are three primary button types. All the css and javascript required are already included in the <a>jahia_components.css</a> and
+				<a>jahia_components.js</a> files. Just copy the html where you want the button on your page.</p>
 				<div class="previewSection">
 					<div class="previewItemImgContainer">
 						<img src="res/img/defaultButton.png" alt="" />
@@ -88,13 +88,14 @@
 						<div>Custom button</div>
 					</div>
 				</div>
+				
 				<h3>Default button</h3>
 				<div class="subCardContainer">
-					<p>Stardard buttons are used across the product with a alios autem dicere aiunt multo etiam inhumanius
-					(quem locum breviter paulo ante perstrinxi) praesidii adiumentique.</p>
+					<p>Default buttons are used across the product where an action from the user is possible. They can vary in width depending on
+					the size of the name. You can also use custom colors for a CTA, just add a color class to your html.</p>
 					<section class="elementSnippetContainer">
 						<div class="subSectionTitle">HTML</div>
-						<pre><span class="copyCodeSnippet">Copy</span><code class="html">&lt;button type="button" class="DXSubmit button_defaultButton"&gt;Button&lt;/button&gt;</code></pre>
+						<pre><span class="copyCodeSnippet">Copy</span><code class="html">&lt;button type="button" class="button_defaultButton" ripple="true"&gt;Button&lt;/button&gt;</code></pre>
 						<div class="subSectionTitle">CSS</div>
 						<pre><span class="copyCodeSnippet">Copy</span><code class="css">.button_defaultButton {
 	background: rgb(200, 200, 200);
@@ -121,23 +122,22 @@
 							<span>
 						</div>
 						<div class="resultItemPreview">
-							<button type="button" class="DXSubmit button_defaultButton">Button</button>
+							<button type="button" class="button_defaultButton" ripple="true">Button</button>
 						</div>
 					</section>
 				</div>
 				
 				<h3>Icon button</h3>
 				<div class="subCardContainer">
-					<p>Icon buttons are used primarely for actions like tollit definitiones, nihil de dividendo ac partiendo docet, non quo modo
-					efficiatur concludaturque ratio tradit, non qua via captiosa solvantur ambigua distinguantur ostendit; iudicia
-					rerum in sensibus ponit</p>
+					<p>Icon buttons are used primarily for quick actions and for shortcuts like the ones you can find on the sidebars of DX8.
+					You must choose an icon consistent with the action the button is supposed to perform. Refer to Style > Icons for examples.</p>
 					<section class="elementSnippetContainer">
 						<div class="subSectionTitle">HTML</div>
-						<pre><span class="copyCodeSnippet">Copy</span><code class="html">&lt;button type="button" class="button_iconButton"&gt;
+						<pre><span class="copyCodeSnippet">Copy</span><code class="html">&lt;button type="button" class="button_iconButton" ripple="true"&gt;
 	
 	&lt;!-- Change icon here --&gt;
 	&lt;i class="material-icons"&gt;perm_media&lt;/i&gt;
-	&lt;div>Icon Button&lt;/div&gt;
+	Button
 &lt;/button&gt;</code></pre>
 						<div class="subSectionTitle">PREVIEW
 							<span class="rightAbsContainer">
@@ -149,9 +149,9 @@
 							<span>
 						</div>
 						<div class="resultItemPreview">
-							<button type="button" class="button_iconButton">
+							<button type="button" class="button_iconButton" ripple="true">
 								<i class="material-icons">perm_media</i>
-								<div>Button</div>
+								Button
 							</button>
 						</div>
 					</section>
@@ -159,9 +159,9 @@
 				
 				<h3>Special & custom buttons</h3>
 				<div class="subCardContainer">
-					<p>Iam in altera philosophiae parte. quae est quaerendi ac disserendi, quae logikh dicitur, iste vester plane, ut mihi quidem
-					videtur, inermis ac nudus est. tollit definitiones, nihil de dividendo ac partiendo docet, non quo modo efficiatur concludaturque
-					ratio tradit, non qua via captiosa solvantur ambigua distinguantur ostendit.</p>
+					<p>In some cases the default button or an icon button just won't do the trick, so you'll need to create your own custom buttons.
+					To do so, just create your button and add the css/js to the end of each <a>jahia_components</a> files or create an external custom file.
+					Bellow is an example of a custom button used to manage the publishing of a page.</p>
 					<section class="elementSnippetContainer">
 						<div class="subSectionTitle">PREVIEW
 							<span class="rightAbsContainer">
@@ -173,13 +173,11 @@
 							<span>
 						</div>
 						<div class="resultItemPreview">
-							
 							<div class="customButtonTestContainer">
 								<button type="button" class="customButton_sync"><i class="material-icons">sync</i></button>
 								<button type="button" class="customButton_publish">Publish</button>
 								<button type="button" class="customButton_unpublish">Unpublish</button>
 							</div>
-							
 						</div>
 					</section>
 				</div>
