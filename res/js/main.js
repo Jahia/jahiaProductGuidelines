@@ -39,7 +39,7 @@ $(document).ready(function() {
 	
 	$(".changeTheme_result").on( "click", function(){
 		if ( $(this).is(':checked') ){
-			$(".elementSnippetContainer .resultItemPreview").css("background", "#6e6e6e");
+			$(".elementSnippetContainer .resultItemPreview").css("background", "#5c6164");
 		}else{
 			$(".elementSnippetContainer .resultItemPreview").css("background", "initial");
 		}

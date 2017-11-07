@@ -26,7 +26,7 @@ section.leftContainerSection nav::-webkit-scrollbar-track {
 section.leftContainerSection nav::-webkit-scrollbar-thumb {
 	background: #828282;
 	border-radius: 8px;
-	border: 4px solid #5e5e5e;
+	border: 4px solid #4a4d50;
 }
 
 section.leftContainerSection nav::-webkit-scrollbar-thumb:hover {
@@ -60,7 +60,7 @@ section.leftContainerSection nav::-webkit-scrollbar-thumb:hover {
 
 
 section.leftContainerSection {
-	background: #5e5e5e;
+	background: #4a4d50;
 	height: 100%;
 	width: 240px;
 	position: fixed;
@@ -137,6 +137,11 @@ section.rightMainContainer {
 	font-weight: 500;
 }
 
+/*.leftContainerSection nav dl dt:hover,
+.leftContainerSection nav dl dd a:hover {
+	background: rgba(255, 255, 255, 0.08);
+}*/
+
 
 
 /*======= Right section main formating =======*/
@@ -207,11 +212,11 @@ section.rightMainContainer {
 }
 
 .veryDarkGrey {
-	background: #5e5e5e;
+	background: #4a4d50;
 }
 
 .darkGrey {
-	background: #6e6e6e
+	background: #5c6164
 }
 
 .lightGrey {
@@ -341,14 +346,14 @@ section.rightMainContainer {
 
 pre .line-number {
 	padding: 1em;
-	background: #6e6e6e;
+	background: #939496;
 	padding-left: 0.5em;
 	color: #565656;
 	font-weight: 700;
 	text-align: right;
 	float: left;
-	border-bottom-left-radius: 4px;
-	border-top-left-radius: 4px;
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
 }
 
 pre .line-number span {
@@ -358,9 +363,9 @@ pre .line-number span {
 
 .elementSnippetContainer .hljs {
     padding: 1em;
-	background: #6e6e6e;
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
+	background: #5c6164;
+	border-bottom-right-radius: 2px;
+	border-top-right-radius: 2px;
 }
 
 .elementSnippetContainer .hljs-keyword,
@@ -455,7 +460,7 @@ pre .line-number span {
 
 .elementSnippetContainer .resultItemPreview {
 	padding: 1em;
-	border-radius: 4px;
+	border-radius: 2px;
 	margin: 13px 0;
 }
 
@@ -495,19 +500,15 @@ span.copyCodeSnippet {
 	text-transform: uppercase;
 	font-weight: 600;
 	font-size: 14px;
-	background: #5e5e5e;
+	background: #4a4d50;
 	padding: 4px 8px;
-	border-top-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-	-webkit-transition: background 150ms ease-in-out;
-	-moz-transition: background 150ms ease-in-out;
-	-ms-transition: background 150ms ease-in-out;
-	-o-transition: background 150ms ease-in-out;
-	transition: background 150ms ease-in-out;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
 }
 
 span.copyCodeSnippet:hover {
-	background: #4b4b4b;
+	background: #939496;
+	color: #4a4d50;
 	cursor: pointer;
 }
 
@@ -545,7 +546,7 @@ span.copyCodeSnippet:hover {
 	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 5px;
-	background: #6e6e6e;
+	background: #5c6164;
 }
 
 .slider:before {
